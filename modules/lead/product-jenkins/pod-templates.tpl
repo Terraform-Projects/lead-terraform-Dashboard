@@ -18,7 +18,7 @@ jenkins:
             nodeUsageMode: NORMAL
             containers:
               - name: "skaffold"
-                image: "${toolchain_image_repo}/builder-image-skaffold:${builder_images_version}"
+                image: "jallen2112/builder-image-skaffold:helm3.2.0test"
                 alwaysPullImage: false
                 workingDir: "/home/jenkins/agent"
                 command: "/bin/sh -c"
